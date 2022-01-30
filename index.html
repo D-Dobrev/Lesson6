@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Garage</title>
+    <style>
+        .describsion {
+            width: 300px;
+            padding: 30px;
+        }  
+        .photo {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        }
+      </style>
+</head>
+
+<body>
+    <h1>Phone Garage</h1>
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><img class="photo" src="./assets/iphone.png" alt="Iphone 13 Pro"></td>
+            <td>Iphone 13 Pro</td>
+            <td class="describsion">The iPhone 13 Pro and iPhone 13 Pro Max are smartphones designed and marketed by Apple Inc. They are the flagship smartphones in the fifteenth generation of the iPhone, succeeding the iPhone 12 Pro and iPhone 12 Pro Max. <a href="https://www.amazon.co.uk/Apple-iPhone-13-Pro-128GB/dp/B09G98SWCW" target="_blank">BUY NOW</a></td>
+            <td class="price">949.00</td>
+        </tr>
+        <tr>
+            <td><img class="photo" src="./assets/phantomviolet_samsung_s21_01.png" alt="Samsung Galaxy S21" ></td>
+            <td>Samsung Galaxy S21</td>
+            <td class="describsion">The Samsung Galaxy S21 is a series of Android-based smartphones designed, developed, marketed, and manufactured by Samsung Electronics as part of its Galaxy S series. They collectively serve as the successor to the Samsung Galaxy S20 series. <a href="https://www.amazon.co.uk/Lenovo-Legion-Duel-Smartphone-Vengeance/dp/B08ZSS6F1P/ref=sr_1_2?crid=AH4VV4QRFGP4;keywords=lenovo+legion+duel+2+phone;qid=1643492835;sprefix=lenovo+legion+duel+2+phone%2Caps%2C112;sr=8-2" target="_blank">BUY NOW</a></td>
+            <td class="price">699.00</td>
+        </tr>
+        <tr>
+            <td><img class="photo" src="./assets/Lenovo_Legion_Duel.png" alt="Lenovo Legion Duel" ></td>
+            <td>Lenovo Legion Duel</td>
+            <td class="describsion">The Lenovo Legion Duel 2, known as the Lenovo Legion 2 Pro in China, is an Android gaming smartphone that was released on April 8, 2021. <a href="https://www.amazon.co.uk/Apple-iPhone-13-Pro-128GB/dp/B09G98SWCW" target="_blank">BUY NOW</a></td>
+            <td class="price">469.00</td>
+        </tr>
+        <tr>
+            <td><img  class="photo" src="./assets/purepng.com-wide-xiaomi-phonesmartphoneandroidgooglephoneapplication-211519341912eyi4t.png" alt="Xiomi MI 10" ></td>
+            <td>Xiomi MI 10</td>
+            <td class="describsion">The Xiaomi Mi 10 and Xiaomi Mi 10 Pro are Android smartphones developed by Xiaomi Inc. announced on 13 February 2020. <a href="https://www.amazon.co.uk/Xiaomi-128GB-Twilight-Grey%EF%BC%88UK-VERSION%EF%BC%89/dp/B08814LC74/ref=sr_1_2?crid=PWINAQNB1NBN;keywords=xiaomi+mi+10;qid=1643492787;sprefix=xiaomi+mi+10%2Caps%2C115;sr=8-2" target="_blank">BUY NOW</a></td>  
+            <td class="price">249.00</td>
+        </tr>
+        <tr>
+            <td><img class="photo" src="./assets/428_428_1C2955C3EAA63C0FC4F7529F5A9776C15AD12492215F771Amp.png" alt="Huawei P40 Pro"></td>
+            <td>Huawei P40 Pro</td>
+            <td class="describsion">Huawei P40 is a line of high-end Android-based smartphones manufactured by Huawei. Unveiled on 26 March 2020, they succeed the Huawei P30 in the company's P series line. <a href="https://www.amazon.co.uk/Huawei-P40-Pro-Smartphone-Renewed-Silver-Frost/dp/B08G53MXJ5/ref=sr_1_1?crid=35IG4UPM8UJ4Y;keywords=Huawei+P40+Pro;qid=1643492758;sprefix=huawei+p40+pro%2Caps%2C105;sr=8-1" target="_blank">BUY NOW</a></td>
+            <td class="price">299.00</td>
+        </tr>
+    </table>
+    <footer>
+        <p id="address">23 Hanson Road M40 5ET</p>
+    </footer>
+    <script>
+        //EX7
+        function test() {
+            const h1 = document.querySelector("h1")
+            h1.innerText = "Strive"
+        }
+        //EX8
+        function bgColor () {
+            const colorChange = document.querySelector("body")
+            colorChange.style.backgroundColor = "red"
+        }
+        //EX9
+        function changeAddress () {
+            const address = document.getElementById("address")
+            address.innerText = "Fake address"
+        }
+        //EX10
+        function addClass () {
+            const z = document.getElementsByTagName("a")
+            for (var i =0; i < z.length; i++) {
+                z[i].classList.add("buy")
+            }
+        }
+
+        //EX11
+        function imageVisability () {
+            const y = document.getElementsByClassName("photo")
+            for (var i =0; i < y.length; i++) {
+                y[i].style.display = "none"
+            }
+        }
+
+        //EX12
+        function changeColor() {
+            const x = document.getElementsByClassName("price")
+            for (var i =0; i < x.length; i++) {
+                x[i].style.backgroundColor = "gray"
+            }
+        }
+    </script>
+    
+   
+</body>
+</html>
